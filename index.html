@@ -3,54 +3,88 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>KNOTT Smart & Sound | High-Fidelity & Home Architecture</title>
+  <title>KNOTT Electrical | Instrument & OT Network Engineering</title>
   <style>
-    /* LUXURY DESIGN - NAVY & GOLD */
+    /* CORE STYLES - MIRRORING KNOTTAP.CO.UK */
     body { font-family: 'Segoe UI', Arial, sans-serif; margin: 0; padding: 0; color: #333; line-height: 1.6; }
-    header { display: flex; justify-content: space-between; align-items: center; background-color: #ffffff; padding: 15px 20px; border-bottom: 4px solid #003366; position: sticky; top: 0; z-index: 1000; }
-    .logo-text { font-size: 1.5rem; font-weight: bold; text-transform: uppercase; color: #003366; }
+    header { display: flex; justify-content: space-between; align-items: center; background-color: #ffffff; color: #003366; padding: 15px 20px; box-shadow: 0 2px 10px rgba(0,0,0,0.1); border-bottom: 4px solid #003366; position: sticky; top: 0; z-index: 1000; }
+    header .logo-container { display: flex; align-items: center; }
+    header .logo-text { font-size: 1.5rem; font-weight: bold; text-transform: uppercase; letter-spacing: 1px; color: #003366; }
+    nav ul { list-style-type: none; margin: 0; padding: 0; }
     nav ul li { display: inline; margin-left: 20px; }
-    nav ul li a { color: #003366; text-decoration: none; font-weight: 600; }
-    .hero { background: linear-gradient(rgba(0, 51, 102, 0.85), rgba(0, 51, 102, 0.85)), url('https://images.unsplash.com/photo-1545016803-a63d0007386d?auto=format&fit=crop&w=1950&q=80'); background-size: cover; color: white; text-align: center; padding: 100px 20px; }
-    .hero h1 { font-size: 2.8rem; margin-bottom: 15px; }
-    .credentials { font-weight: bold; color: #ffcc00; margin-bottom: 30px; }
-    .btn { display: inline-block; padding: 12px 25px; margin: 10px; text-decoration: none; border-radius: 5px; font-weight: bold; }
+    nav ul li a { color: #003366; text-decoration: none; font-weight: 600; font-size: 1.05rem; transition: color 0.3s; }
+    nav ul li a:hover { color: #d4af37; }
+    .hero { background: linear-gradient(rgba(0, 51, 102, 0.9), rgba(0, 51, 102, 0.8)), url('https://images.unsplash.com/photo-1558494949-ef010cbdcc51?ixlib=rb-1.2.1&auto=format&fit=crop&w=1950&q=80'); background-size: cover; background-position: center; color: white; text-align: center; padding: 80px 20px; }
+    .hero h1 { font-size: 2.5rem; margin-bottom: 15px; }
+    .hero p { font-size: 1.2rem; color: white; margin-bottom: 5px; }
+    .hero .credentials { font-weight: bold; font-size: 1.1rem; color: #ffcc00; margin-bottom: 30px; }
+    .btn-group { margin-top: 20px; }
+    .btn { display: inline-block; padding: 12px 25px; margin: 10px; text-decoration: none; border-radius: 5px; font-weight: bold; transition: all 0.3s; }
     .btn-primary { background-color: #ffcc00; color: #003366; }
-    section { padding: 50px 20px; max-width: 1000px; margin: 0 auto; }
-    h2 { color: #003366; border-bottom: 3px solid #ffcc00; display: inline-block; margin-bottom: 30px; }
-    .feature-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 30px; }
-    .card { background: #f9f9f9; padding: 25px; border-left: 5px solid #003366; }
-    footer { background-color: #003366; color: white; text-align: center; padding: 40px 20px; }
-    footer a { color: #ffcc00; }
+    .btn-secondary { border: 2px solid white; color: white !important; }
+    .btn-secondary:hover { background-color: white; color: #003366 !important; }
+    section { padding: 40px 20px; max-width: 1100px; margin: 0 auto; }
+    h2 { color: #003366; border-bottom: 3px solid #ffcc00; display: inline-block; padding-bottom: 5px; margin-bottom: 25px; }
+    .services-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 25px; }
+    .service-card { background: #f4f7f9; padding: 25px; border-top: 5px solid #003366; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+    .service-card h3 { color: #003366; margin-top: 0; }
+    .service-card ul { padding-left: 20px; }
+    .service-card li { margin-bottom: 8px; }
+    footer { background-color: #003366; color: white; text-align: center; padding: 40px 20px; margin-top: 40px; }
+    footer a { color: #ffcc00; text-decoration: none; }
   </style>
 </head>
 <body>
   <header>
-    <div class="logo-text">KNOTT Smart & Sound</div>
-    <nav><ul><li><a href="mailto:enquiry@knottsmart.co.uk">Contact</a></li></ul></nav>
+    <div class="logo-container">
+      <div class="logo-text">KNOTT Electrical</div>
+    </div>
+    <nav><ul><li><a href="#services">Services</a></li><li><a href="mailto:andrew@knottelec.co.uk">Contact</a></li></ul></nav>
   </header>
   <section class="hero">
-    <h1>Reference-Standard Audio & Smart Home Architecture</h1>
-    <p><strong>Andrew Knott</strong> | MBA (Distinction), CEng, FIET, CMgr</p>
-    <div class="credentials">Engineering Excellence for High-Fidelity Systems</div>
-    <a href="https://knottap.co.uk/cv.pdf" class="btn btn-primary">Download Technical CV</a>
+    <h1>Specialist Electrical, Instrument & OT Network Engineering</h1>
+    <p><strong>EUR ING Andrew Knott</strong> | MBA (Distinction), BSc (Hons), Dipl Eng</p>
+    <div class="credentials">CEng, FIET, FInstMC, CMgr, FCMI, FAPM, PMP</div>
+    <div class="btn-group">
+      <a href="https://knottap.co.uk/flyer.pdf" class="btn btn-primary" target="_blank">Capability Slide Deck</a>
+      <a href="https://knottap.co.uk/cv.pdf" class="btn btn-secondary" target="_blank">Download CV</a>
+    </div>
   </section>
-  <section>
-    <h2>Expertise</h2>
-    <div class="feature-grid">
-      <div class="card">
-        <h3>High-Fidelity Audio</h3>
-        <p>Technical architecture for reference-standard audio systems, specializing in acoustic optimization and specialist components.</p>
+  <section id="services">
+    <h2>Professional Service Offerings</h2>
+    <div class="services-grid">
+      <div class="service-card">
+        <h3>Electrical</h3>
+        <ul>
+          <li><strong>Detailed Design & Specification:</strong> Single Line Diagrams, Control Panel & Marshalling Panel design, and Motor Control Centres (MCCs)[cite: 30].</li>
+          <li><strong>LV Distribution:</strong> Engineering for Low Voltage (LV) distribution, Small Power, Lighting, Containment, and Cable Management Systems[cite: 30].</li>
+        </ul>
       </div>
-      <div class="card">
-        <h3>Smart Home Design</h3>
-        <p>Bespoke automation engineering for lighting, climate, and security, ensuring seamless technology integration.</p>
+      <div class="service-card">
+        <h3>Instrumentation</h3>
+        <ul>
+          <li><strong>Design & Specification:</strong> Instrument Data Sheets and Specification, Loop Diagrams, and Hook-Ups[cite: 31].</li>
+          <li><strong>Schedules:</strong> Comprehensive Instrument and IO Schedules[cite: 31].</li>
+          <li><strong>Documentation:</strong> Detailed Cable and Termination Schedules to ensure operational readiness[cite: 31].</li>
+        </ul>
+      </div>
+      <div class="service-card">
+        <h3>OT Network Engineering</h3>
+        <ul>
+          <li><strong>Industrial Networking:</strong> Ethernet/IP, Profinet, and Modbus TCP architectures[cite: 32].</li>
+          <li><strong>OT Cyber Security:</strong> ISA/IEC 62443 standards, network segmentation, and firewall management[cite: 32].</li>
+          <li><strong>Infrastructure:</strong> Virtualised server-level hosts for SCADA and MES systems[cite: 32].</li>
+        </ul>
       </div>
     </div>
   </section>
   <footer>
-    <p>Email: <a href="mailto:enquiry@knottsmart.co.uk">enquiry@knottsmart.co.uk</a> | +44 7899 296 926</p>
-    <p style="font-size:0.8rem; margin-top:15px;">KNOTT Smart & Sound is a trading name of Knott Automation Projects Ltd.<br>Registered in England & Wales No. 07892452.</p>
+    <p><strong>KNOTT Electrical</strong></p>
+    <p>Email: <a href="mailto:andrew@knottelec.co.uk">andrew@knottelec.co.uk</a> | Phone: +44 7899 296 926 [cite: 33]</p>
+    <p style="margin-top:20px; font-size:0.85rem; opacity: 0.8;">
+      KNOTT Electrical is a trading name of Knott Automation Projects Ltd.<br>
+      Registered in England & Wales No. 07892452. Registered Office: 5 Marton Meadow, Ripon, HG4 5FF. [cite: 34]
+    </p>
   </footer>
 </body>
 </html>
